@@ -35,7 +35,7 @@ This is outside the scope of this lab... talk to me about getting a clound insta
 ## Your Goal:
 Deploy a website on an Raspberry Pi Zero W or a server of your choice. To do so:
 * **install** an apache http web server and firewall daemon **(packages: apache2, apache2-utils, firewalld)** 
-* Start the http and firewald services and enable them at start up
+* Start the **http** and **firewalld** services and enable them at start up
 * Create a firewall exception for the http service that takes effect right away and persists after reboot
 * Write a index.html file to the /var/www/html/ directory with anythin you like inside
 

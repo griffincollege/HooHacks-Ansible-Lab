@@ -29,10 +29,25 @@ sudo yum install ansible
 
 ### Windows
 ```
-Just don't... talk to me about getting a clound instance to work from.
+This is outside the scope of this lab... talk to me about getting a clound instance to work from.
 ```
 
-## Instructions
+## Your Goal:
+Deploy a website on an Raspberry Pi Zero W or a server of your choice. To do so:
+* **install** an apache http web server and firewall daemon **(packages: apache2, apache2-utils, firewalld)** 
+* Start the http and firewald services and enable them at start up
+* Create a firewall exception for the http service that takes effect right away and persists after reboot
+* Write a index.html file to the /var/www/html/ directory with anythin you like inside
+
+## Bonus:
+### Level 1:
+Make your play book idempotent, that means your playbook changes nothing after the first time you run it.
+
+### Level 2: 
+Leverage variables in your playbook for either service names, package names, or paths
+
+### Level 3:
+Deploy your hackathon application to the apache web server to demo to judges using Ansible
 
 ## Author
 * Griffin College - [Red Hat](https://www.redhat.com/en)

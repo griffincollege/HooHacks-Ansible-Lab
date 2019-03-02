@@ -32,10 +32,16 @@ sudo yum install ansible
 This is outside the scope of this lab... talk to me about getting a clound instance to work from.
 ```
 
+## Getting Started
+Begin by writing your inventory file. Hint: find your ip address on your server using `hostname -I`
+
+Note: The username for your raspberry pi is: **pi** the password is: **raspberry** this may be
+important for running your ansible playbook _wink_ _wink_
+
 ## Your Goal:
 Deploy a website on an Raspberry Pi Zero W or a server of your choice. To do so:
 * **install** an apache http web server and firewall daemon **(packages: apache2, apache2-utils, firewalld)** 
-* Start the **http** and **firewalld** services and enable them at start up
+* Start the http **apache2** and **firewalld** services and enable them at start up
 * Create a firewall exception for the http service that takes effect right away and persists after reboot
 * Write a index.html file to the /var/www/html/ directory with anythin you like inside
 

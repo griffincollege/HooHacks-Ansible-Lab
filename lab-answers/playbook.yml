@@ -1,0 +1,34 @@
+---
+- hosts: raspberry-pi
+  become: yes
+  tasks:
+    - name: "Packages Installed"
+      apt: 
+        name: apache2,apache2-utils,firewalld
+        state: present
+
+    - name: "Apache Server Started"
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: "Firewalld Service Started"
+      service:
+        name: firewalld
+        state: started
+        enabled: yes
+    
+    - name: "Firewall Exception Created"
+      firewalld:
+        service: http
+        permanent: yes
+        immediate: yes
+        state: enabled
+
+    # this is temporary for now, we will do some react stuff
+    - name: "index.html File Written"
+      copy:
+        dest: /var/www/html/index.html
+        content: "This is an Ansible configured Raspberry Pi IoT Server!"
+...

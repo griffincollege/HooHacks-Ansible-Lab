@@ -35,7 +35,7 @@ Just don't... talk to me about getting a clound instance to work from.
 ## Instructions
 
 ## Author
-* Griffin College - [Red Hat] (https://www.redhat.com/en)
+* Griffin College - [Red Hat](https://www.redhat.com/en)
 
 ## License
 This project rocks an MIT License

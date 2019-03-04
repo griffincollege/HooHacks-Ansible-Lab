@@ -1,0 +1,6 @@
+[raspberry-pi]
+# PLACE RASPBERRY PI IP HERE!
+
+# don't worry about this
+[raspberry-pi:vars]
+ansible_python_interpreter=/usr/bin/python3

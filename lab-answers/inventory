@@ -1,0 +1,5 @@
+[raspberry-pi]
+# This may not be your Raspberry Pi ip
+10.193.117.174
+[raspberry-pi:vars]
+ansible_python_interpreter=/usr/bin/python3 
